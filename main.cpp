@@ -13,14 +13,7 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     engine.load(url);
 
-
-
-
-
-
-
-    "qweqwqweqwe"
-    qDebug() << "ahhahaha";
+    qDebug() << "игорь пидор";
 
     return app.exec();
 }
