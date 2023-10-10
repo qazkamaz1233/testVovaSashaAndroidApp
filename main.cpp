@@ -1,6 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -12,6 +12,8 @@ int main(int argc, char *argv[])
         &app, []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
     engine.load(url);
+
+    qDebug() << "ahhahaha";
 
     return app.exec();
 }
